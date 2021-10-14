@@ -1,0 +1,61 @@
+nav {
+	box-shadow:$mobile-nav-shadow;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		overflow: hidden;
+		align-items: center;
+		justify-content: flex-end; 
+
+	    @media (max-width:767px) {
+		 	width:$menu-width;
+			 flex-flow: column;
+		}
+	}
+
+  
+	li {
+		margin:0;
+
+
+		&.logo {
+			margin-right: auto;
+
+			
+		}
+		@media (max-width:767px) {
+			// Delayed Animation
+			$delay:0.05;
+			$step:0.08;
+			@for $i from 1 through 12 
+			{
+			&:nth-child(#{$i}) {
+				a {
+				$delay: ($step + $delay);
+				@include transition-delay(#{$delay}s);
+
+				}
+			}
+			}
+		}
+
+		a {
+			color:$logo_color;
+			position:relative;
+            display: block; 
+            outline: none;
+            text-decoration:none; 
+			transition: color .15s ;
+
+			&:hover {
+				color: $logo_sec_color;
+			}
+            
+		}
+	}
+
+	
+}

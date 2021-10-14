@@ -1,0 +1,19 @@
+{
+  "name": "CISCAT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "css": "sass src/scss/style.scss dist/css/style.css",
+    "css:watch": "npm run css && sass -w src/scss/style.scss dist/css/style.css"
+  },
+  "keywords": [],
+  "author": "Vinent Perleirn",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.41.1"
+  },
+  "dependencies": {
+    "basiclightbox": "^5.0.4"
+  }
+}

@@ -1,0 +1,30 @@
+#welcome {
+    text-align: center;
+    padding: 9.55rem 0.5rem;
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    background-position: 0 77%;
+
+    &.subpage {
+        padding: 3rem 0;
+    }
+
+    @media(max-width:767px) {
+        height: calc(100vh - 22rem);
+
+        &.subpage {
+            height: 10.5rem;
+        }
+
+        h1 {
+            line-height: 1.2;
+        }
+    }
+    
+
+    h1 {
+        text-shadow: 0 0 5px rgb(12 37 58);
+        margin: 0 0 3.5rem;
+        color: #fff;
+    }
+}

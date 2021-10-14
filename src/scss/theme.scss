@@ -1,0 +1,76 @@
+
+
+
+// Colors
+$body_bg:#002b47 ;
+$header_bg:#001f32;
+$footer_bg: $header_bg;
+$header_border_color:#335E6F;
+$mobile-menu-separator-color:rgba(255,255,2555,.3);
+$menu_itrem_color:#fff;
+$main-font-color: #656565;
+
+
+// Logo  
+$logo_color:#fff;
+$logo_sec_color:#5fa4ff;
+ 
+// Fonts 
+$main-font: "Lato","helvetica neue",helvetica,arial,sans-serif;
+$title-font: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+ 
+// HEADER & Menu
+$logo-top-padding:.5rem;
+$logo-right-padding:1rem;
+$logo-bottom-padding:.5rem;
+$logo-left-padding:.5rem;
+
+$header-top-padding:.5rem;
+$header-right-padding:.5rem;
+$header-bottom-padding:.5rem;
+$header-left-padding:.5rem;
+
+$menu-itrem-top-padding:.5rem;
+$menu-itrem-right-padding:.8rem;
+$menu-itrem-bottom-padding:.5rem;
+$menu-itrem-left-padding:.8rem;
+
+$menu-width:18rem;
+
+$mobile-nav-shadow:0 0px 10px rgba(0,0,0,.5);
+
+// Menu
+$burger_top:.65rem;
+$burger_dist_from_border:.5rem;
+$hamburger-padding-x : 0;
+$hamburger-padding-y :0;
+$hamburger-layer-width : 1.5rem;
+$hamburger-layer-height : 4px;
+$hamburger-layer-spacing : 6px;
+$hamburger-layer-color : #fff;
+$hamburger-layer-border-radius : 4px;
+$hamburger-hover-opacity : 0.7;
+$hamburger-hover-transition-duration : 0.15s;
+$hamburger-hover-transition-timing-function: linear;
+$hamburger-hover-use-filter: false;
+$hamburger-hover-filter    : opacity(80%);
+
+$menu-item-top-padding: .5rem;
+$menu-item-right-padding: .85rem;
+$menu-item-bottom-padding:  .5rem;
+$menu-item-left-padding: .85rem;
+
+ 
+
+// MAIN SECTION 
+$main-top-padding:.5rem;
+$main-right-padding:1rem;
+$main-bottom-padding:.5rem;
+$main-left-padding:1rem;
+
+
+
+// BUTTON
+$btn-primary-bg: transparent;
+$btn-primary-bg-hover: #135ccd;
+$btn-primary-border-color:#fff;

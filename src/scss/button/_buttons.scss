@@ -1,0 +1,36 @@
+@use "sass:color";
+
+$lighter_color:  rgba($btn-primary-bg-hover, .8); 
+
+// Button with ripple effect 
+.btn {
+  border: 2px solid $btn-primary-border-color;
+  @include border-radius(.3em);
+  padding: .8rem 1rem;
+  cursor: pointer;
+  color: white;
+  background-color: $btn-primary-bg;
+  box-shadow: 0 2px 4px rgba(0,0,0,.22);
+  outline: none;
+  background-position: center;
+  @include transition(all .8s);
+  text-decoration: none;
+ 
+  &:hover {
+      background: $lighter_color radial-gradient(circle, transparent 1%,  $lighter_color 1%) center/15000% !important;
+      box-shadow: none medium; 
+	}
+
+	&:active {
+	  background-color: lighten($btn-primary-bg, 20% );
+	  background-size: 100%;
+    @include transition(all 0s); 
+	}
+
+
+  &.btn-main {
+    text-transform: uppercase;
+    background-color: rgba($btn-primary-bg-hover, .3); 
+    padding: .8rem 1.5rem;
+  }
+}

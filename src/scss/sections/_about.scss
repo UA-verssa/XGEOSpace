@@ -1,0 +1,35 @@
+#about {
+   color: #fff; 
+   padding: 2rem 0; 
+
+    a { 
+        color: #53a4ff;
+        text-decoration: none;
+    }
+
+    ol {
+        list-style: none;
+
+        li {
+            position: relative;
+            counter-increment: about; 
+            &::before {
+                content: counter(about);
+                color: #fff;
+                font-size: 1rem;
+                font-weight: bold;
+                position: absolute;
+                --size: 23px;
+                left: calc(-1 * var(--size) - 10px);
+                line-height: var(--size);
+                width: var(--size);
+                height: var(--size);
+                top: 4px;
+                background: rgba(0,0,0,.3);
+                border-radius: 50%;
+                text-align: center;
+                box-shadow: 1px 1px 0 #5c5757;
+            }
+        }
+    }
+}

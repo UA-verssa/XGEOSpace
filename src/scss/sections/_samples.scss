@@ -1,0 +1,106 @@
+#samples {
+    color: #fff;
+
+    table {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        td, th {
+            text-align: left;
+            color: #d7d7d7;
+        }
+
+        thead th { 
+            border-top: none;
+            border-bottom: none !important;
+            color: #fff;
+            font-size: .875rem;
+            text-transform: uppercase; 
+            vertical-align: top;
+            background-color: rgba(0, 0, 0, 0.35);
+            padding: .875rem .5rem;
+
+            span {
+                display: block;
+                text-transform: none;
+                font-weight: normal;
+                font-size: .75rem;
+            }
+        }
+        
+        tbody {
+            tr:nth-of-type(odd) {
+                background-color: rgba(0, 0, 0, 0.15);
+            }
+
+            tr:nth-of-type(even) {
+                background-color: rgba(255, 255, 255, 0.15);
+            }
+
+            td {
+                padding: .875rem .5rem; 
+                transition: all .15s cubic-bezier(0.075, 0.82, 0.165, 1);
+                cursor: pointer;
+            }
+
+            tr:hover {
+                td { 
+                    color: #ded387; 
+                    background-color: rgba(255,255,255,.3);
+                }
+            }
+        }
+
+    }
+
+
+    @media(max-width:767px) {
+        table {  
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: block;
+            
+                td {
+                    border: none;
+                    position: relative;
+                    text-align: right;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: .35rem .25rem; 
+                    border-bottom: 1px solid rgba(0,0,0,.8);
+                    
+                    .img {
+                        width: 50%;
+                        display: block;
+                        margin: 0 auto
+                    }
+                }
+            }
+
+            $headers: 1 "ID", 2 "Epoch",3 "Semi-major Axis",4 "Inclination",5 "Eccentricity",6 "Argument of Periapsis",7 "Right Ascension of Ascending Node";  
+            @each $rank, $name  in $headers {
+                td:nth-of-type(#{$rank}):before { 
+                    content: "#{$name}";   
+                    font-weight: bold;
+                    color: #fff;
+
+                } 
+            } 
+        }
+    }
+}
+
+
+.img { 
+    width: 2.5rem;
+    border: 5px solid #fff;
+    border-radius: .25rem;
+    cursor: pointer;
+
+    &.img-b {
+        border-width: 10px;
+    }
+} 
